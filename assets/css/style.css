@@ -32,6 +32,7 @@ h1, h2 {
 #logo {
     float: left; 
     font-size: 250%;
+    
 }
 
 #nav-menu {
@@ -53,3 +54,25 @@ h1, h2 {
     list-style-type: none;
     margin-right: 40px; 
 }
+
+/* format sections under heading and center*/ 
+
+.about-container {
+    margin: 75px;
+    padding-top: 225px; 
+    padding-left: 750px; 
+}
+
+.footer-container {
+    margin:
+}
+
+/* underline currently active webpage to remind user of their current location */
+
+.currentpg {
+    border-bottom: 2px solid brown; 
+}
+
+/* remove nav menu auto underline */ 
+#nav-menu a {
+    text-decoration: none; 
