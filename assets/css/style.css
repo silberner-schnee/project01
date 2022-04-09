@@ -87,3 +87,10 @@ h1, h2 {
 /* remove nav menu auto underline */ 
 #nav-menu a {
     text-decoration: none; 
+}
+
+/* create highlight effect on navigation pages when hovered over */
+
+#nav-menu a:hover {
+    color: brown; 
+}
