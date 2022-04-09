@@ -27,6 +27,13 @@ h1, h2 {
     text-decoration: none; 
 }
 
+#web-bg{
+    background-color: #F2F2F2; 
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center; 
+}
+
 /* logo & navigation menu */
 
 #logo {
