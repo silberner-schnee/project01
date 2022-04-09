@@ -37,6 +37,7 @@ h1, h2 {
 
 #nav-menu {
     letter-spacing: 2px;
+    float: right; 
     font-size: 105%;
     color: #151515;
 }
@@ -45,22 +46,32 @@ h1, h2 {
 
 #logo, #nav-menu {
     line-height: 80px; 
+    margin: -80px 5px; 
 }
 
 /* move nav menu to the upper-right, and space them out */ 
 
 #nav-menu li {
-    float: right;
     list-style-type: none;
     margin-right: 40px; 
+    display: inline-block; 
 }
 
 /* format sections under heading and center*/ 
 
 .about-container {
     margin: 75px;
-    padding-top: 225px; 
+    padding-top: 125px; 
     padding-left: 750px; 
+}
+
+/*container for home page image */
+#image-container {
+    height: 832px;
+    width: 625px;
+    float: left;
+    overflow: hidden; 
+    margin-top: 5px; 
 }
 
 .footer-container {
