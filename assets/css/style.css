@@ -113,7 +113,7 @@ h1, h2 {
 
 /* add min-width for index.html page */ 
 
-/* styling for Tesla Timeline */
+/* styling for Tesla Timeline container*/
 
 .timeline-container {
     font-family: Montserrat, sans-serif; 
@@ -123,8 +123,105 @@ h1, h2 {
     align-items: center;
     justify-content: center; 
     padding-bottom: 900px; 
+}
+/* styling for timeline content */
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto; 
+    position: relative; 
+}
+/* remove bullet points for timeline */
+
+.timeline ul {
+    list-style: none; 
+}
+/* fine grained styling for timeline content */
+
+.timeline ul li {
+    /* give space between content and the border 
+    (creates physical gap in timeline) */ 
+    padding: 20px;
+    background-color: beige; 
+    /* round out border corners */
+    border-radius: 10px; 
+    /* give space between borders */
+    margin-bottom: 20px; 
+}
+/* remove margin-bottom space for last list item, b/c not needed */ 
+.timeline ul li:last-child {
+    margin-bottom: 0; 
+}
+/* style time-line headings & paragraphs(font / margins) */ 
+.timeline-content h1 {
+    font-size: 25px; 
+    font-weight: 500;
+    line-height: 30px; 
+    margin-bottom: 10px; 
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+/* Responsive sizing for timeline, desktops & tablet view */
+@media only screen and (min-width: 760px) {
+/* add line connecting timeline events */
+.timeline::before {
+    content: '';
+    position:absolute;
+    height: 100%;
+    width: 2px;
+    background-color: brown; 
+
+    /* center line connecting timeline events to divide odd/even events */
+    left: 50%; 
+    /* further center line to be visible from 1st event to last */ 
+    transform: translateX(-50%);
+}
+
+
+/* style timeline events for desktop/tablet view */
+.timeline ul li {
+    width: 50%; 
+    margin-bottom: 50px; 
+    position: relative;
+}
+/* split timeline to left and right, alternating */
+/* clear opposite side of float to create spacing (1 timeline event per line) */ 
+.timeline ul li:nth-child(odd) {
+    float: left; 
+    clear: right;
+    /* create gap between odd timeline event and dividing line */ 
+    transform: translateX(-30px);
+}
+.timeline ul li:nth-child(even) {
+    float: right; 
+    clear: left;
+    /* create gap between even timeline event and dividing line */ 
+    transform: translatex(30px);
+}
+/* create small, circular shape (bullets) for each event listed within timeline */
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    /* makes square */
+    height: 20px;
+    width: 20px;
+    background-color: brown;
+
+    /* makes square a circle */
+    border-radius: 50%; 
+
+    /* positions circles (bullet-points) along the line */
     
 
+
+}
 }
 
 
