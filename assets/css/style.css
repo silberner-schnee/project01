@@ -217,11 +217,18 @@ h1, h2 {
     /* makes square a circle */
     border-radius: 50%; 
 
-    /* positions circles (bullet-points) along the line */
-    
-
-
+    /* positions circles (bullet-points) top of each event */
+    top: 0; 
 }
+/* moves bullet points from even / odd events to centered timeline */ 
+    .timeline ul li:nth-child(odd)::after {
+        right: -30px;
+        transform: translate(50%, -50%);
+    }
+    .timeline ul li:nth-child(even)::after {
+        left: -30px; 
+        transform: translate(-50%, 50%);
+    }
 }
 
 
