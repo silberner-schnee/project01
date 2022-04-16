@@ -167,6 +167,12 @@ h1, h2 {
     line-height: 30px;
     font-weight: 300;
 }
+.timeline-content .date {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px; 
+    letter-spacing: 2px; 
+}
 
 /* Responsive sizing for timeline, desktops & tablet view */
 @media only screen and (min-width: 760px) {
@@ -198,12 +204,18 @@ h1, h2 {
     clear: right;
     /* create gap between odd timeline event and dividing line */ 
     transform: translateX(-30px);
+
+    /* adjust border-radius for odd timeline events */
+    border-radius: 20px 0px 20px 20px; 
 }
 .timeline ul li:nth-child(even) {
     float: right; 
     clear: left;
     /* create gap between even timeline event and dividing line */ 
     transform: translatex(30px);
+
+    /* adjust border-radius for even timeline events */
+    border-radius: 0px 20px 20px 20px; 
 }
 /* create small, circular shape (bullets) for each event listed within timeline */
 .timeline ul li::after {
@@ -232,6 +244,10 @@ h1, h2 {
     /* add hover feature for timeline */
     .timeline ul li:hover:after {
         background-color: orange; 
+    }
+    .timeline-content .date {
+        position: absolute; 
+        top: -30px; 
     }
 }
 
