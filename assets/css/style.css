@@ -229,6 +229,10 @@ h1, h2 {
         left: -30px; 
         transform: translate(-50%, -50%);
     }
+    /* add hover feature for timeline */
+    .timeline ul li:hover:after {
+        background-color: orange; 
+    }
 }
 
 
