@@ -168,13 +168,15 @@ h1, h2 {
     font-weight: 300;
 }
 .timeline-content .date {
-    font-size: 13px;
+    font-family: Montserrat, sans-serif; 
+    text-transform: lowercase; 
+    font-size: 10px;
     font-weight: 300;
     margin-bottom: 10px; 
     letter-spacing: 2px; 
 }
 
-/* Responsive sizing for timeline, desktops & tablet view */
+/* Responsive sizing for timeline */
 @media only screen and (min-width: 760px) {
 /* add line connecting timeline events */
 .timeline::before {
