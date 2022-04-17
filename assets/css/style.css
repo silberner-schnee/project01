@@ -253,5 +253,28 @@ h1, h2 {
     }
 }
 
+footer {
+    height: 80px; 
+}
+
+.social-m {
+    text-align: center;
+}
+
+.social-m > li {
+    display: inline-block; 
+}
+
+.social-m ion-icon {
+    text-decoration: none; 
+    font-size: 20px; 
+    transition: 0.2s;
+    margin: 0 30px; 
+    padding: 0 30px; 
+}
+
+.social-m ion-icon:hover {
+    color: brown; 
+}
 
 
