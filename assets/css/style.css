@@ -322,3 +322,13 @@ label {
     cursor: text; 
 }
 
+button {
+    padding: 10px 0;
+    color: black; 
+    outline: none; 
+    background: transparent;
+    border: 1px solid black; 
+    width: 100%; 
+    cursor: pointer; 
+}
+
