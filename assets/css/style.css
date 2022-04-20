@@ -320,6 +320,7 @@ label {
     padding: 10px; 
     color: black; 
     cursor: text; 
+    transition: 0.2s;
 }
 
 button {
@@ -331,4 +332,7 @@ button {
     width: 100%; 
     cursor: pointer; 
 }
+
+/* when inside text box, move icon and placeholder text above texbox */ 
+
 
