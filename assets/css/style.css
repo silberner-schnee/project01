@@ -333,6 +333,15 @@ button {
     cursor: pointer; 
 }
 
-/* when inside text box, move icon and placeholder text above texbox */ 
-
+/* when inside text box (name, email, phone), move icon and placeholder text above texbox */ 
+input:focus~label,
+/* maintain placeholder text position above textbox (name, email, phone) while user text occupies textbox */ 
+input:valid~label,
+/* when inside text box (your message), move icon and placeholder text above texbox */
+textarea:focus~label,
+/* maintain placeholder text position above textbox (your message) while user text occupies textbox */ 
+textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
 
