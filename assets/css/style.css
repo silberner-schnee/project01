@@ -70,9 +70,10 @@ h1, h2 {
 /* format sections under heading and center*/ 
 
 .about-container {
-    margin: 75px;
+    margin: 5px;
     padding-top: 125px; 
     padding-left: 750px; 
+    position: relative; 
 }
 
 .about-container p {
@@ -81,8 +82,9 @@ h1, h2 {
 
 #image-container {
     float: left;
-    margin-top: 100px;
-    padding-top: 20px;
+    padding-top: 140px;
+    margin: 5px; 
+    position: absolute; 
 }
 
 /*container for home page image */
