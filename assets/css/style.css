@@ -26,6 +26,12 @@ h1, h2 {
     color: #010101;
     text-decoration: none; 
     font-size: 1.4rem; 
+    text-align: center; 
+}
+
+/* paragraphs */ 
+p {
+    text-align: center; 
 }
 
 /*add background-color to body */ 
@@ -381,13 +387,19 @@ maintains space between them */
     padding-top: 50px;
     padding-bottom: 75px; 
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 730px) {
 
     .heading-wrap {
-        position: relative;
-        
+        text-align: left;
     }
 
+}
+
+@media screen and (max-width: 428px) {
+    .heading-wrap {
+        text-align: left;
+        font-size: 5.38vw; 
+    }
 }
 
 
