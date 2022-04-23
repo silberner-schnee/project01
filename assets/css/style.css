@@ -70,10 +70,12 @@ h1, h2 {
 /* format sections under heading and center*/ 
 
 .about-container {
-    margin: 5px;
-    padding-top: 125px; 
+    padding-top: 180px; 
     padding-left: 750px; 
+    max-width: 2000px;
+    margin: 0 auto; 
     position: relative; 
+    
 }
 
 .about-container p {
@@ -379,6 +381,8 @@ maintains space between them */
     padding-bottom: 75px; 
 }
 
+/* video.html page - responsive video sizes*/ 
+
 /* large tablet */ 
 @media screen and (max-width: 1020px) {
     .video-wrapper iframe {
@@ -406,7 +410,29 @@ maintains space between them */
     }
 }
 
+/* index.html page - timeline responsive design */ 
+@media screen and (max-width: 1000px) {
+    .about-container {
+        position: relative;
+        top: 850px; 
+        left: -500px; 
+        margin: 0 auto;
+        padding-bottom: 300px; 
+       
+    }
+}
 
+@media screen and (max-width: 2145px) {
+    .timeline-container {
+        font-family: Montserrat, sans-serif; 
+        min-height: 100vh; 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding: 200px 0;
+    }
+}
 
 /*  when inside text box (name, email, phone), move icon and placeholder text above texbox */ 
 /* maintain placeholder text position above textbox (name, email, phone) while user text occupies textbox */ 
