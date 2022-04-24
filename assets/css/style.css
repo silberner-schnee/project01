@@ -25,7 +25,6 @@ h1, h2 {
     font-size: 1.4rem; 
     text-align: center; 
 }
-
 /* paragraphs */ 
 p {
     text-align: center; 
@@ -37,7 +36,6 @@ p {
     background-size: cover; 
     background-position: center; 
 }
-
 /* logo & navigation menu */
 #logo {
     float: left; 
@@ -229,7 +227,6 @@ p {
         top: -30px; 
     }
 }
-
 footer {
     height: 80px; 
 }
@@ -481,22 +478,3 @@ maintains space between them */
         top: -150px; 
     }
 }
-/*  when inside text box (name, email, phone), move icon and placeholder text above texbox */ 
-/* maintain placeholder text position above textbox (name, email, phone) while user text occupies textbox */ 
-/* when inside text box (your message), move icon and placeholder text above texbox */
-/* when inside text box (your message), move icon and placeholder text above texbox */
-/* maintain placeholder text position above textbox (your message) while user text occupies textbox */ 
-
-/* interactive
-
-input:focus~label,
-
-input:valid~label,
-
-textarea:focus~label,
-
-textarea:valid~label {
-    top: -35px;
-    font-size: 14px;
-}
-*/ 
