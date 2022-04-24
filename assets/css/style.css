@@ -409,13 +409,48 @@ maintains space between them */
         margin: 0 auto; 
     }
 }
-
 @media screen and (max-width: 650px) {
+    /* resize tesla image for mobile devices */ 
     #image-container img {
         height: 600px;
         width: 400px;
         overflow: hidden; 
+    }
+    /* fix text spacing under resized tesla image */ 
+    .about-mobile {
+        position: relative;
+        top: 580px; 
+        left: 0px; 
+        margin: 0 auto;
+        padding-bottom: 50px; 
+    }
+    .bio-mobile {
+        position: relative;
+        padding-top: 650px; 
+        left: 0px; 
+        margin: 0 auto;
+        padding-bottom: 50px; 
+    }
+    .time-mobile {
+        position: relative;
+        top: -130px; 
+        left: 0px; 
+        margin: 0 auto;
+    }
+    .timeline {
+        position: relative;
+        top: -150px; 
+    }
 }
+@media screen and (max-width 350px) {
+/* resize tesla image for small mobile devices */ 
+    #image-container img {
+        height: 400px;
+        width: 200px; 
+        overflow: hidden
+    }
+}
+
 /*  when inside text box (name, email, phone), move icon and placeholder text above texbox */ 
 /* maintain placeholder text position above textbox (name, email, phone) while user text occupies textbox */ 
 /* when inside text box (your message), move icon and placeholder text above texbox */
