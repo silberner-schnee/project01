@@ -314,8 +314,9 @@ input, textarea {
     font-size: 15px; 
 }
 .suggest {
-    font-size: 10px; 
+    font-size: 1.4rem; 
     text-align: center;
+    justify-content: center;
     padding-bottom: 100px; 
 }
 
