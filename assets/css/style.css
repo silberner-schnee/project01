@@ -75,7 +75,7 @@ p {
 #image-container {
     float: left;
     padding-top: 140px;
-    margin: 5px 5px 5px 0; 
+    margin: 5px; 
     position: absolute; 
 }
 /*container for home page image */
@@ -401,6 +401,10 @@ maintains space between them */
         left: 0px; 
         margin: 0 auto;
     }
+    .timeline {
+        position: relative;
+        top: -150px; 
+    }
 }
 @media screen and (max-width: 1650px) {
     .timeline-heading {
@@ -442,15 +446,41 @@ maintains space between them */
         top: -150px; 
     }
 }
-@media screen and (max-width 350px) {
+@media screen and (max-width: 450px) {
 /* resize tesla image for small mobile devices */ 
     #image-container img {
-        height: 400px;
-        width: 200px; 
-        overflow: hidden
+        height: 500px;
+        width: 300px;
+        overflow: hidden; 
+        position: relative;
+        top: 100px; 
+    }
+    /* fix text spacing under resized tesla image */ 
+    .about-mobile {
+        position: relative;
+        top: 580px; 
+        left: 0px; 
+        margin: 0 auto;
+        padding-bottom: 50px; 
+    }
+    .bio-mobile {
+        position: relative;
+        padding-top: 650px; 
+        left: 0px; 
+        margin: 0 auto;
+        padding-bottom: 50px; 
+    }
+    .time-mobile {
+        position: relative;
+        top: -130px; 
+        left: 0px; 
+        margin: 0 auto;
+    }
+    .timeline {
+        position: relative;
+        top: -150px; 
     }
 }
-
 /*  when inside text box (name, email, phone), move icon and placeholder text above texbox */ 
 /* maintain placeholder text position above textbox (name, email, phone) while user text occupies textbox */ 
 /* when inside text box (your message), move icon and placeholder text above texbox */
