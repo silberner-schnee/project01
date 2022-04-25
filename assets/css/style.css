@@ -620,3 +620,48 @@ maintains space between them */
         top: -150px; 
     }
 }
+
+/* control image and text positioning for old mobile devices (iphone 5) 321px width or less */ 
+
+@media screen and (max-width: 321px) {
+
+    /* resize tesla image for small mobile devices */ 
+    
+        #image-container img {
+            height: 460px;
+            width: 280px;
+            overflow: hidden; 
+            position: relative;
+            top: 220px; 
+        }
+    
+        /* fix text spacing under resized tesla image */ 
+    
+        .about-mobile {
+            position: relative;
+            top: 600px; 
+            left: 0px; 
+            margin: 0 auto;
+            padding-bottom: 50px; 
+        }
+    
+        .bio-mobile {
+            position: relative;
+            padding-top: 670px; 
+            left: 0px; 
+            margin: 0 auto;
+            padding-bottom: 50px; 
+        }
+    
+        .time-mobile {
+            position: relative;
+            top: -130px; 
+            left: 0px; 
+            margin: 0 auto;
+        }
+    
+        .timeline {
+            position: relative;
+            top: -150px; 
+        }
+    }
