@@ -560,7 +560,7 @@ maintains space between them */
 
     #image-container img {
         height: 600px;
-        width: 400px;
+        width: 459px;
         overflow: hidden;
     }
 
@@ -595,13 +595,13 @@ maintains space between them */
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 459px) {
 
     /* resize tesla image for small mobile devices */
 
     #image-container img {
         height: 500px;
-        width: 300px;
+        width: 382px;
         overflow: hidden;
         position: relative;
         top: 100px;
@@ -640,13 +640,13 @@ maintains space between them */
 
 /* control image and text positioning for old mobile devices (iphone 5) 321px width or less */
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 382px) {
 
     /* resize tesla image for small mobile devices */
 
     #image-container img {
-        height: 460px;
-        width: 280px;
+        height: 392px;
+        width: 300px;
         overflow: hidden;
         position: relative;
         top: 220px;
