@@ -1,108 +1,191 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Tesla Project
 
-Welcome silberner-schnee,
+The Tesla project is a website that endeavors to educate teenagers to adults on the significance of Nikola Tesla's life, and how he has contributed to modern society. The overall aim is to provide a light overview of this topic and to instill a curiosity to learn more. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Users of the website can find information about Nikola Tesla's life and accomplishments through a short biography, a timeline of notable events, and through watching videos about Tesla and his contributions to science. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Responsive Design](/assets/css/images/responsive-design.webp)
 
-## Gitpod Reminders
+## Features 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Existing Features
 
-`python3 -m http.server`
+  - __Title__
 
-A blue button should appear to click: _Make Public_,
+    - On the upper left corner of all pages is the website title displayed in black text. 
 
-Another blue button should appear to click: _Open Browser_.
+- __Navigation Bar__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    - Navigation bar is available across all pages on the upper right corner of the webpage. 
 
-A blue button should appear to click: _Make Public_,
+    - Responsive to different screen sizes.
 
-Another blue button should appear to click: _Open Browser_.
+    - Includes links to 'Home', 'Video', and 'Contact Us' pages. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    - When links are hovered over by pointer, the navigation bar background changes to white and text becomes brown. 
+    
+    - The current page the user is on will be shown as underlined in the navigation bar. 
 
-To log into the Heroku toolbelt CLI:
+![Nav Bar](/assets/css/images/header.webp)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- __The landing page image__
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    - located on the home page.
 
-------
+    - Beneath the title and navigation bar on the landing page is the hero image, depicting Nikola Tesla. This gives the user a clear visual as to the topic of the website, and serves to peak the user's attention as to who he is. 
 
-## Release History
+![Landing Page](/assets/css/images/tesla-resize.webp)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- __About Us__
+    - Located on the home page
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    - The About Us section describes the purpose of the website. 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    - This section will help the user understand the scope of the website, and sets proper expectations. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![About Us](/assets/css/images/about-us.webp)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- __Mini-Biography__
+    - Located on the home page
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    - This section will provide a short biography of Nikola Tesla to the user to give them a light overview of his life, accomplishments, and overall contributions to modern society. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Mini-Bio](/assets/css/images/mini-bio.webp)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- __Timeline__
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  - Located on the home page
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  - The timeline serves as a visual representation of notable events in Nikola Tesla's life and serves as an aid to help users understand and follow the progression of Nikola Tesla's personal development from birth to death.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  - The timeline tracks 11 notable events in the life of Nikola Tesla. 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+  - The timeline bubbles will turn orange when the pointer is hovered over an event. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Timeline](/assets/css/images/timeline-1.webp)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+  - The timeline will change into a more narrow, mobile format without the bubbles once the screen size is reduced for these devices. 
 
-------
+![Timeiline - mobile](/assets/css/images/timeline-m.webp)
 
-## FAQ about the uptime script
+- __The Footer__ 
 
-**Why have you added this script?**
+    - The footer section includes links to social media sites (facebook, twitter, instagram, and youtube) for the Tesla Project. 
+    
+    - The social media links will open to a new tab to allow easy navigation for the user. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    - When social media links are hovered over by the pointer they will change to brown color. 
 
-**How will this affect me?**
+    - The social media footer is accessible across all pages.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    - The footer is useful for users because as it encourages them to follow the Tesla Project for new content updates. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![Footer](/assets/css/images/social-m.webp)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- __Contact-Us__
 
-**So….?**
+    - This page will allow the user to submit feedback for the Tesla Project to request new content and offer suggestions to what they would like to see added to the website. 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+    - This page includes a contact form that allows the user to enter their relevant details (name, phone number, email, and their message) and submit the information to the Tesla Project for review. 
 
-**Can I opt out?**
+    - Validation is provided for the email address field provided within the contact form. 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+    - All fields within the contact form must be completed before submission will be accepted. 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+    - The contact-form allows for more user-engagement, as their suggestions are contributing to future content
 
-**Anything more?**
+![Contact Form](/assets/css/images/contact-form.webp)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- __Videos__
 
----
+  - On this page the user can access several videos that cover more detail about Nikola Tesla's life and his accomplishments. 
 
-Happy coding!
+  - Above each video is an appropriate heading that conveys the topic to be discussed. 
+
+  - Videos are resized according to which device they are being viewed from. 
+
+  - Videos allow full control to the user to play, stop, speed up or slow down, change volume, add subtitles, enable full-screen viewing, or share the video. 
+
+  - At the end of the video, related content is suggested by YT if the user wishes to explore more content not yet available on the Tesla Project. 
+  
+  - The catalogued videos provide added convenience for users who don't like reading much, but still wish to learn about Tesla. The videos go into further detail / explanation about Teslas background and achievements for the interested user. 
+
+## Testing 
+
+### Validator Testing 
+
+- HTML
+  - __index.html__
+      - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsilberner-schnee.github.io%2Fproject01%2Findex.html)
+
+  - __videos.html__
+      - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsilberner-schnee.github.io%2Fproject01%2Fvideos.html)
+
+  - __contact.html__
+      - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fsilberner-schnee.github.io%2Fproject01%2Fcontact.html)
+
+- CSS
+  - __style.css__
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsilberner-schnee.github.io%2Fproject01%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+- Accessibility
+  - I confirmed best practices were followed and that the colors and font choices for the website were accessible to the user and made for easy viewing. Code was run through lighthouse in devtools to reach this conclusion. 
+
+![lighthouse](/assets/css/images/lighthouse-metrics.webp)
+
+### Manual Testing
+
+  - The website has been tested to work in the following browsers: Firefox, Chrome, Edge.
+
+  - Using the devtools toolbar, I have determined the website is responsive and functions across all standard screen sizes. 
+
+  - I can confirm that all text across all web pages are easily readable and easy to understand.
+
+  - The navigation links are simple, intuitive, and work on all pages. 
+
+  - The videos play properly, and are responsive across all standard screen sizes. 
+
+  - I confirm that the contact form requires all fields to have entries, that the email field validates that an '@' symbol is entered by the user to ensure a proper email address is supplied before proceeding, and that the submit button works as intended. 
+
+### Unfixed Bugs
+
+- No bugs discovered after testing the deployed website. 
+- No bugs left unfixed. 
+
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the [GitHub repository](https://github.com/silberner-schnee/project01), navigate to the Settings tab toward the top of the screen with a gear icon.  
+
+  - From the *code and automation* subsection to the left, select *pages* 
+
+  - Under *Github Pages* toward the top of the screen, locate in bold the subsection titled, *source* and click on *branch*. 
+
+  - In the drop-down menu from branch, select the *main* branch. 
+
+  - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://silberner-schnee.github.io/project01/
+
+## Credits 
+
+### Content 
+
+- [font awesome](https://kit.fontawesome.com/65a0f11d5d.js") icons were used for the contact form.
+- [ionicons-module](https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js") and [ionicons-nomodule]("https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js") were used in the footer to generate the social media icons.
+
+- All fonts used for the website _(adobe-garamond-pro, serif, cormorant-garamond)_ were taken from [Adobe fonts]("https://use.typekit.net/djv5dul.css") 
+
+- Instructions on how to embed video in a webpage was taken from youtube's code provided under their "embed" option from their share link. 
+  - Videos taken from YT [Tesla Biography](https://pixabay.com/vectors/man-nikola-tesla-inventor-science-5437917/), [Tesla Tower](https://www.youtube.com/watch?v=QdZIuB9K6zE&feature=emb_title)
+
+- Instructions on how to implement a timeline in a webpage was inspired from [Responsive Vertical Timeline](https://www.youtube.com/watch?v=-uzOuGlUfDQ)
+
+- Instructions on how to make YT embedded videos responsive inspired by [Embed YT Video](https://www.youtube.com/watch?v=9YffrCViTVk)
+
+
+### Media
+
+- The photo used on the home page was taken from a free image website, [pixabay](https://pixabay.com/vectors/man-nikola-tesla-inventor-science-5437917/)
